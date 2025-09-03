@@ -14,8 +14,8 @@ html {
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #892291;
+  color: #e0e0e0; /* Light text color for dark theme */
+  background-color: #121212; /* Dark background color */
 }
 
 .container {
@@ -29,11 +29,11 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(18, 18, 18, 0.95); /* Darker navbar background */
   backdrop-filter: blur(10px);
   z-index: 1000;
   padding: 1rem 0;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3); /* Shadow for dark theme */
 }
 
 .nav-container {
@@ -46,7 +46,7 @@ body {
 }
 
 .nav-logo h2 {
-  color: #2c3e50;
+  color: #e0e0e0; /* Light color for logo text */
   font-weight: 600;
 }
 
@@ -58,14 +58,14 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: #333;
+  color: #e0e0e0; /* Light color for nav links */
   font-weight: 500;
   transition: color 0.3s ease;
   position: relative;
 }
 
 .nav-link:hover {
-  color: #3498db;
+  color: #764ba2; /* Accent color on hover */
 }
 
 .nav-link::after {
@@ -75,7 +75,7 @@ body {
   height: 2px;
   bottom: -5px;
   left: 50%;
-  background-color: #3498db;
+  background-color: #764ba2; /* Accent color */
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -93,7 +93,7 @@ body {
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #333;
+  background-color: #e0e0e0; /* Light color for hamburger bars */
   margin: 3px 0;
   transition: 0.3s;
 }
@@ -101,7 +101,7 @@ body {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); /* Darker gradient for hero */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,19 +132,20 @@ body {
   font-size: 3.5rem;
   margin-bottom: 1rem;
   font-weight: 700;
+  color: #e0e0e0; /* Light color for hero heading */
 }
 
 .hero h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #ecf0f1;
+  color: #ccc; /* Lighter grey for sub-heading */
   font-weight: 400;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: #bdc3c7;
+  color: #b0b0b0; /* Lighter grey for hero paragraph */
 }
 
 .hero-buttons {
@@ -165,14 +166,14 @@ body {
 }
 
 .btn-primary {
-  background-color: #3498db;
+  background-color: #764ba2; /* Accent color */
   color: white;
-  border-color: #3498db;
+  border-color: #764ba2;
 }
 
 .btn-primary:hover {
   background-color: transparent;
-  border-color: #3498db;
+  border-color: #764ba2;
   transform: translateY(-2px);
 }
 
@@ -184,7 +185,7 @@ body {
 
 .btn-secondary:hover {
   background-color: white;
-  color: #333;
+  color: #121212; /* Dark color on hover */
   transform: translateY(-2px);
 }
 
@@ -197,7 +198,7 @@ h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #2c3e50;
+  color: #e0e0e0; /* Light color for section headings */
   position: relative;
 }
 
@@ -206,7 +207,7 @@ h2::after {
   position: absolute;
   width: 80px;
   height: 3px;
-  background-color: #3498db;
+  background-color: #764ba2; /* Accent color */
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
@@ -214,7 +215,7 @@ h2::after {
 
 /* About Section */
 .about {
-  background-color: #f8f9fa;
+  background-color: #181818; /* Darker background for about section */
 }
 
 .profile-section {
@@ -235,8 +236,8 @@ h2::after {
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid #3498db;
-  box-shadow: 0 10px 30px rgba(52, 152, 219, 0.3);
+  border: 5px solid #764ba2; /* Accent color border */
+  box-shadow: 0 10px 30px rgba(118, 75, 162, 0.3); /* Accent color shadow */
   transition: transform 0.3s ease;
 }
 
@@ -252,7 +253,7 @@ h2::after {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 3rem;
-  color: #555;
+  color: #b0b0b0; /* Lighter grey for paragraph text */
 }
 
 .stats {
@@ -265,9 +266,9 @@ h2::after {
 .stat {
   text-align: center;
   padding: 2rem;
-  background: white;
+  background: #282828; /* Darker background for stats */
   border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
 
@@ -277,18 +278,18 @@ h2::after {
 
 .stat h3 {
   font-size: 1.5rem;
-  color: #3498db;
+  color: #764ba2; /* Accent color */
   margin-bottom: 0.5rem;
 }
 
 .stat p {
-  color: #666;
+  color: #ccc; /* Lighter grey for stat text */
   font-weight: 500;
 }
 
 /* Education Section */
 .education {
-  background-color: white;
+  background-color: #181818; /* Darker background */
 }
 
 .timeline {
@@ -304,7 +305,7 @@ h2::after {
   top: 0;
   bottom: 0;
   width: 2px;
-  background-color: #3498db;
+  background-color: #764ba2; /* Accent color */
   transform: translateX(-50%);
 }
 
@@ -329,7 +330,7 @@ h2::after {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #3498db;
+  background-color: #764ba2; /* Accent color */
   border-radius: 50%;
   top: 0;
 }
@@ -343,10 +344,10 @@ h2::after {
 }
 
 .timeline-content {
-  background: white;
+  background: #282828; /* Darker background for timeline content */
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
 
@@ -355,25 +356,25 @@ h2::after {
 }
 
 .timeline-content h3 {
-  color: #3498db;
+  color: #764ba2; /* Accent color */
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
 }
 
 .timeline-content h4 {
-  color: #2c3e50;
+  color: #e0e0e0; /* Light color for timeline heading */
   margin-bottom: 1rem;
   font-size: 1.1rem;
 }
 
 .timeline-content p {
-  color: #666;
+  color: #b0b0b0; /* Lighter grey for timeline text */
   line-height: 1.6;
 }
 
 /* Experience Section */
 .experience {
-  background-color: #f8f9fa;
+  background-color: #181818; /* Darker background */
 }
 
 .experience-grid {
@@ -384,39 +385,39 @@ h2::after {
 }
 
 .experience-card {
-  background: white;
+  background: #282828; /* Darker background for cards */
   padding: 2rem;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
 .experience-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 .experience-card i {
   font-size: 3rem;
-  color: #3498db;
+  color: #764ba2; /* Accent color */
   margin-bottom: 1rem;
 }
 
 .experience-card h3 {
-  color: #2c3e50;
+  color: #e0e0e0; /* Light color for card headings */
   margin-bottom: 1rem;
   font-size: 1.3rem;
 }
 
 .experience-card p {
-  color: #666;
+  color: #b0b0b0; /* Lighter grey for card text */
   line-height: 1.6;
 }
 
 /* Services Section */
 .services {
-  background-color: white;
+  background-color: #181818; /* Darker background */
 }
 
 .services-grid {
@@ -427,7 +428,7 @@ h2::after {
 }
 
 .service-card {
-  background: #f8f9fa;
+  background: #282828; /* Darker background */
   padding: 2rem;
   border-radius: 15px;
   text-align: center;
@@ -436,20 +437,20 @@ h2::after {
 }
 
 .service-card:hover {
-  background: white;
-  border-color: #3498db;
+  background: #303030; /* Slightly lighter on hover */
+  border-color: #764ba2; /* Accent color */
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .service-card i {
   font-size: 3rem;
-  color: #3498db;
+  color: #764ba2; /* Accent color */
   margin-bottom: 1rem;
 }
 
 .service-card h3 {
-  color: #2c3e50;
+  color: #e0e0e0; /* Light color for card heading */
   margin-bottom: 1.5rem;
   font-size: 1.3rem;
 }
@@ -461,7 +462,7 @@ h2::after {
 
 .service-card li {
   padding: 0.5rem 0;
-  color: #666;
+  color: #b0b0b0; /* Lighter grey for list items */
   position: relative;
   padding-left: 1.5rem;
 }
@@ -470,13 +471,13 @@ h2::after {
   content: '✓';
   position: absolute;
   left: 0;
-  color: #3498db;
+  color: #764ba2; /* Accent color */
   font-weight: bold;
 }
 
 /* Contact Section */
 .contact {
-  background-color: #f8f9fa;
+  background-color: #181818; /* Darker background */
 }
 
 .contact-content {
@@ -498,9 +499,9 @@ h2::after {
   align-items: center;
   gap: 1rem;
   padding: 1.5rem;
-  background: white;
+  background: #282828; /* Darker background */
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
 
@@ -510,26 +511,26 @@ h2::after {
 
 .contact-item i {
   font-size: 2rem;
-  color: #3498db;
+  color: #764ba2; /* Accent color */
   width: 60px;
   text-align: center;
 }
 
 .contact-item h3 {
-  color: #2c3e50;
+  color: #e0e0e0; /* Light color for item heading */
   margin-bottom: 0.5rem;
 }
 
 .contact-item p {
-  color: #666;
+  color: #b0b0b0; /* Lighter grey for item text */
   margin: 0;
 }
 
 .contact-form {
-  background: white;
+  background: #282828; /* Darker background */
   padding: 2rem;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .form-group {
@@ -540,17 +541,19 @@ h2::after {
 .form-group textarea {
   width: 100%;
   padding: 1rem;
-  border: 2px solid #e1e8ed;
+  border: 2px solid #333; /* Darker border */
   border-radius: 8px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
   font-family: inherit;
+  background-color: #1e1e1e; /* Dark input background */
+  color: #e0e0e0; /* Light input text */
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #3498db;
+  border-color: #764ba2; /* Accent color border on focus */
 }
 
 .form-group textarea {
@@ -560,7 +563,7 @@ h2::after {
 
 /* Footer */
 .footer {
-  background-color: #2c3e50;
+  background-color: #111; /* Very dark footer background */
   color: white;
   text-align: center;
   padding: 2rem 0;
@@ -568,7 +571,7 @@ h2::after {
 
 .footer p {
   margin: 0;
-  color: #bdc3c7;
+  color: #aaa; /* Lighter grey for footer text */
 }
 
 /* WhatsApp Button */
@@ -615,21 +618,33 @@ h2::after {
     display: flex;
   }
 
+  .hamburger .bar {
+    background-color: #e0e0e0; /* Light color for hamburger bars */
+  }
+
   .nav-menu {
     position: fixed;
     left: -100%;
     top: 70px;
     flex-direction: column;
-    background-color: white;
+    background-color: #181818; /* Darker background for mobile menu */
     width: 100%;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.2);
     padding: 2rem 0;
   }
 
   .nav-menu.active {
     left: 0;
+  }
+
+  .nav-link {
+    color: #e0e0e0; /* Light color for mobile nav links */
+  }
+
+  .nav-link:hover {
+    color: #764ba2; /* Accent color */
   }
 
   .hero h1 {
@@ -719,3 +734,15 @@ h2::after {
     padding: 0 15px;
   }
 }
+
+/* Navbar background on scroll */
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.style.background = 'rgba(18, 18, 18, 0.98)';
+        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.4)';
+    } else {
+        navbar.style.background = 'rgba(18, 18, 18, 0.95)';
+        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
+    }
+});
